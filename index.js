@@ -20,11 +20,11 @@ function keepGoing(array, changeValue, skipValue){
   return array
 }
 
-/*finds the a value that satisfies FindFn and returns null if value is not found*/
+/*finds the a value that satisfies findFn and returns null if value is not found*/
 function findBy(array, findFn){
   for(let i = 0; i < array.length; i++){
     if(array[i] === findFn){
-      
+      return `findFn`
     }
   }
   return null
