@@ -22,10 +22,9 @@ function keepGoing(array, changeValue, skipValue){
 
 /*finds the a value that satisfies findFn and returns null if value is not found*/
 function findBy(array, findFn){
-  const c = findFn
   for(let i = 0; i < array.length; i++){
-    if(array[i] === c){
-      return c
+    if(array[i] === findFn){
+      return array[i]
     }
   }
   return null
